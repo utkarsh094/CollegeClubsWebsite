@@ -69,6 +69,7 @@ const clubsData = [
             email: "stesracing@gmail.com",
             phone: "+91 7083046303",
             social: "@STESRACING",
+            location: "https://maps.app.goo.gl/ac6T6vi9uoJ6XPzr5"
         },
         photos: ["source.images/stesrace1.jpg",
              "source.images/stesrace2.jpg",
@@ -103,7 +104,8 @@ const clubsData = [
         contact: {
             website: "https://youtube.com/@scoeartcircle6332?si=b1gZgn9JLIAHXfsE",
             phone: "8010225321",
-            social: "scoe_artcircle"
+            social: "scoe_artcircle",
+            location: "https://maps.app.goo.gl/cQxW9JD5xWNBybg9A"
         },
         photos: ["source.images/artclub1.jpg",
              "source.images/artclub2.jpg",
@@ -138,7 +140,8 @@ const clubsData = [
             website:"https://www.linkedin.com/company/stesrobotics/",
             email: " stesrobotics@gmail.com ",
             phone: "+1-234-567-8904",
-            social: "@STESROBOTICS"
+            social: "@STESROBOTICS",
+            location: "https://maps.app.goo.gl/shKbJwH83ARBy72m7"
         },
         photos: ["source.images/stesrobo1.jpg",
              "source.images/stesrobo2.jpg",
@@ -173,7 +176,8 @@ const clubsData = [
         contact: {
             email: "gdg@college.edu",
             phone: "+1-234-567-8905",
-            social: "@collegegdg"
+            social: "@collegegdg",
+            location: "https://maps.app.goo.gl/QGpWWCrQGP9KBG516"
         },
         photos: ["Tech Talk", "Coding Session", "App Launch", "Google Workshop"]
     },
@@ -205,7 +209,8 @@ const clubsData = [
             website:"http://www.steshyperion.com",
             email: "teamhyperion@gmail.com",
             phone: "+91 8080939614",
-            social: "@TEAM.HYPERION"
+            social: "@TEAM.HYPERION",
+            location: "https://maps.app.goo.gl/ac6T6vi9uoJ6XPzr5"
         },
         photos: ["source.images/hypersion1.jpg",
              "source.images/hypersion2.jpg",
@@ -265,8 +270,8 @@ function createClubCard(club, index) {
             </ul>
         </div>
         <div class="contact-info">
-            <span><a href="${club.contact.website}" target="_blank" class="btn-link">🌐WEBSITE"</a></span>
-            <span><a href="${club.contact.location}" target="_blank" class="btn-link">🌐LOCATION</a></span>
+            <span><a href="${club.contact.website}" target="_blank" class="btn-link">🌐WEBSITE</a></span>
+            <span><a href="${club.contact.location}" target="_blank" class="btn-link">🗺️LOCATION</a></span>
             <span> <a href="https://instagram.com/${club.contact.social.replace('@','')}" target="_blank" class="btn-link">📱 ${club.contact.social}</a></span
         </div>
     `;
