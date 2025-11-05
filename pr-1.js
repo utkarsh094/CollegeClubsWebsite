@@ -28,7 +28,9 @@ const clubsData = [
         contact: {
             website:"https://stesrocketry.in",
             phone: "+91 88611 83457",
-            social: "@stesrocketry"
+            social: "@stesrocketry",
+            location: "https://maps.app.goo.gl/4ysJ9pKFR6zHpqm8A"
+            
         },
         photos: ["source.images/stesrocket1.jpg",
             "source.images/stesrocket2.jpg",
@@ -263,7 +265,8 @@ function createClubCard(club, index) {
             </ul>
         </div>
         <div class="contact-info">
-            <span><a href="${club.contact.website}" target="_blank" class="btn-link">🌐 ${club.contact.website}</a></span>
+            <span><a href="${club.contact.website}" target="_blank" class="btn-link">🌐WEBSITE"</a></span>
+            <span><a href="${club.contact.location}" target="_blank" class="btn-link">🌐LOCATION</a></span>
             <span> <a href="https://instagram.com/${club.contact.social.replace('@','')}" target="_blank" class="btn-link">📱 ${club.contact.social}</a></span
         </div>
     `;
@@ -333,6 +336,7 @@ function openModal(club) {
             <p><strong>Social:</strong> ${club.contact.social}</p>
             <a href="${club.contact.website}" target="_blank" class="btn-link">🌐${club.contact.website}</a>
             <a href="https://instagram.com/${club.contact.social.replace('@','')}" target="_blank" class="btn-link">📱  ${club.contact.social}</a>
+            <a href="${club.contact.location}" target="_blank" class="btn-link">🌐 ${club.contact.location}</a>
         </div>
     `;
     modal.style.display = 'block';
